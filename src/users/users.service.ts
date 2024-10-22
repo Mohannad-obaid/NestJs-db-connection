@@ -1,4 +1,5 @@
 import {
+  ConflictException,
   Injectable,
   InternalServerErrorException,
   NotFoundException,
@@ -29,10 +30,21 @@ export class UserService {
   }
 
   async createUser(createUserDto: CreateUserDto): Promise<UserResponseDto> {
+    // 1) check if user already exists
+    const userExists = await this.userRepository.findOne({
+      where: { email: createUserDto.email },
+    });
+    if (userExists) {
+      throw new ConflictException('User already exists');
+    }
+
+    // 2) create user
     const user = await this.userRepository.save(createUserDto);
     if (!user) {
       throw new InternalServerErrorException('Error creating user');
     }
+
+    // 3) return user
     return user;
   }
 
