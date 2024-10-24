@@ -1,0 +1,22 @@
+services:
+  mongodb:
+    image: mongo:7.0.2
+    container_name: nestjs-database-connection-mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - nestjs_mongo_db:/data/database
+
+
+  adminer:
+    image: adminer
+    container_name: nestjs-database-connection-adminer
+    restart: always
+    ports:
+      - "8080:8080"
+
+volumes:
+  nestjs_mongo_db:
+
+
