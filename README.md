@@ -22,9 +22,35 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+
+
+##  Database Connection Project
+
+This project aims to provide a flexible and user-friendly interface for connecting to both PostgreSQL and NoSQL databases. It includes two branches: an SQL branch and a NoSQL branch, in addition to the main branch. Docker is used in this project to simplify environment setup and service management.
+
+## Project Structure
+
+- **main**: The main branch of the project, containing the core code and shared files.
+- **Sql**: A branch dedicated to connecting to the PostgreSQL database.
+- **NoSql**: A branch dedicated to connecting to the NoSQL database.
+
+## Requirements
+
+- Docker
+- Docker Compose
+- Node.js (version 14 or higher)
+- npm or yarn
+
+## How to Use
+
+### 1. Clone the Project
+
+```bash
+
+git clone https://github.com/Mohannad-obaid/NestJs-db-connection.git
+cd NestJs-db-connection
+
 
 ## Project setup
 
@@ -60,15 +86,16 @@ $ npm run test:cov
 
 ## Resources
 
-Check out a few resources that may come in handy when working with NestJS:
+## Resources
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+### Project Essential Links
+
+- [NestJS Documentation](https://docs.nestjs.com) - Learn more about NestJS and building applications with it.
+- [Docker Documentation](https://docs.docker.com) - Discover more about Docker and how to use it.
+- [PostgreSQL Documentation](https://www.postgresql.org/docs) - PostgreSQL resources for database management.
+- [MongoDB Documentation](https://docs.mongodb.com) - MongoDB resources for NoSQL database management.
+- [Git Documentation](https://git-scm.com/doc) - Git resources for code management.
+
 
 ## Support
 
